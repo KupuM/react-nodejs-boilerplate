@@ -1,0 +1,30 @@
+{
+  "name": "react-nodejs-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\"",
+    "client:build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KupuM/react-nodejs-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KupuM/react-nodejs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/KupuM/react-nodejs-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
